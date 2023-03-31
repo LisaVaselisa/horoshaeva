@@ -1,0 +1,18 @@
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  /* text-transform: uppercase; */
+  margin: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  /* box-shadow: 0 0 15px 0px rgba(0, 1, 1, 0.2); */
+  background-color: #99ffff;
+  position: relative;
+}
