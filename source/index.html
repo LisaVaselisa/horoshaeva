@@ -4,21 +4,23 @@
     <meta charset="utf-8">
     <title>Хорошаева - писатель</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <!-- <div style="display: none;">
+    <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
-      </div> -->
+    </div>
+    <div class="container">
+      
+  
       <header class="header">
         <section class="header__wrap">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
-              <li class="nav__item"><a class="nav__link" href="about.html">О себе</a></li>
+              <li class="nav__item"><a class="nav__link" href="#about">О себе</a></li>
               <li class="nav__item"><a class="nav__link" href="stories.html">Рассказы</a></li>
               <li class="nav__item"><a class="nav__link" href="blog.html">Блог</a></li>
               <li class="nav__item"><a class="nav__link" href="poems.html">Стихи</a></li>
@@ -44,42 +46,24 @@
       <main class="main">
         <section class="main__title">
           <h1 class="visually-hidden">Хорошаева Ксения - страница писателя</h1>
-          <a class="main__link" href="#">О себе</a>
+          <a class="main__link" id="about">О себе</a>
         </section>
         <section class="about">
-         
+          <div class="about__photo">
+            <picture>
+              <!-- <source type="image/webp" media="(min-width: 1300px)" srcset="img/horoshaeva.webp 1x, img/horoshaeva.webp 2x"> -->
+              <!-- <source media="(min-width: 1300px)" srcset="img/horoshaeva.jpg 1x, img/horoshaeva.jpg 2x"> -->
+              <img class="about__img" src="img/horoshaeva.jpg"  srcset="img/horoshaeva.jpg 2x" width="100%" height="100%" alt="Фото писателя Хорошаевой">
+            </picture>
+          </div>
           <div class="about__welcome">
             <h3 class="about__capital">Привет, друзья!</h3>
             <p class="about__txt">Меня зовут Ксения и я писательница. Уже более 15 лет пишу рассказы и стихи в разных жанрах, от драмы до фантастики. Люблю играть с чувствами и переживаниями, заставлять читателя задумываться и волноваться вместе со мной.</p>
             <p class="about__txt">Я стараюсь, чтобы в моих рассказах каждый персонаж жил своей жизнью, испытывал эмоции, сталкивался со своими проблемами и находил способы их решения.</p>
             <p class="about__txt">Читайте мои истории и открывайте для себя совершенно новые миры и идеи. Я уверена, что вы не пожалеете об этом</p>
+            <p class="about__txt">Я всегда на связи со своими читателями, готова общаться и делиться своим опытом и знаниями.</p>
           </div>
           
-        </section>
-        <section class="social">
-          <div class="social__wrap">
-            <h2 class="visually-hidden">Как меня найти</h2>
-            <p class="social__text">Я всегда на связи со своими читателями, готова общаться и делиться своим опытом и знаниями.</p>
-          </div>
-
-        
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank" aria-label="Вконтакте">
-              <!-- <svg width="22" height="12">
-                <use xlink:href="#icon-vk"></use>
-                </svg> -->
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank" aria-label="Инстаграмм">
-                <!-- <svg width="22" height="12">
-                  <use xlink:href="#icon-inst"></use>
-                </svg> -->
-              </a>
-            </li>
-          
-          </ul>
         </section>
       </main>
 
@@ -88,28 +72,23 @@
         <div class="contact">
           <ul class="contact__list">
             <li class="contact__item">
-              <a class="contact__link contact__link--vk" href="https://vk.com/htmlacademy" target="_blank" aria-label="Вконтакте">
-                <!-- <svg width="22" height="12">
+              <a class="contact__link" href="https://vk.com/id2072346" target="_blank" aria-label="Вконтакте">
+                <svg width="25" height="25">
                   <use xlink:href="#icon-vk"></use>
-                </svg> -->
+                </svg>
               </a>
             </li>
             <li class="contact__item">
-              <a class="contact__link contact__link--inst" href="https://www.instagram.com/htmlacademy/" target="_blank" aria-label="Инстаграм">
-                <!-- <svg width="17" height="17">
-                  <use xlink:href="#icon-insta"></use>
-                </svg> -->
+              <a class="contact__link" href="https://instagram.com/kseniiakhoroshaeva?igshid=YmMyMTA2M2Y=" target="_blank" aria-label="Инстаграм">
+                <svg width="25" height="25">
+                  <use xlink:href="#icon-inst"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="copyright">
-          <a class="copyright__link" href="#" target="_blank" aria-label="Елена Пересветова">
-            <span class="copyright__logo">Елена Пересветова</span>
-              <!-- <svg width="27" height="34">
-                <use xlink:href="#icon-htmlacademy"></use>
-              </svg> -->
-          </a>
+          <span class="copyright__name"> Создан Еленой Пересветовой</span>
         </div>
       
       

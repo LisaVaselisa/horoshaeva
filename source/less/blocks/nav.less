@@ -1,15 +1,40 @@
+.nav {
+  width: min-content;
+
+  @media (min-width: @tablet-width) {
+    width: max-content;
+    margin-left: auto;
+  }
+}
+
 .nav__list {
   .list-no();
   display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
+  flex-direction: column;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
+
+.nav__item {
+  padding: 5px 10px;
+
+  &:hover,
+  &:focus {
+    background-color: @green;
+  }
+
+  &:active {
+    opacity: 0.7 ;
+  }
+}
+
+
 
 .nav__link {
   color: @yellow;
   text-decoration: none;
-  display: block;
-  width: max-content;
-  padding: 10px 20px;
 }
